@@ -1,0 +1,1 @@
+alert(fila[i].getElementsByTagName('td')[3].text);

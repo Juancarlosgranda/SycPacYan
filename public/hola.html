@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function borrarColumna()
+{
+  var fila;
+  fila=document.getElementById("tablita").getElementsByTagName('tr');
+  ultimaColumna=fila.length-1
+  for(var i=0;ultimaColumna;i++)
+  	fila[i].getElementsByTagName('td')[1].style.display="none";
+}
+</script>
+
+</head>
+<body onload="borrarColumna()">
+<table id="tablita" border="1">
+  <tr>
+    <td>primer renglón, primera columna</td>
+    <td>primer renglón, segunda columna</td>
+    <td>primer renglón, tercera columna</td>
+  </tr>
+<tr>
+    <td>primer renglón, primera columna</td>
+    <td>primer renglón, segunda columna</td>
+    <td>primer renglón, tercera columna</td>
+  </tr>
+</table>
+</body>
+</html> 
